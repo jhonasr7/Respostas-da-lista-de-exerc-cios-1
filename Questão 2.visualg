@@ -1,0 +1,17 @@
+algoritmo "Questão 2"
+
+var
+  nascimento: inteiro
+
+inicio
+
+  escreval("Insira seu ano de nascimento: ")
+  leia(nascimento)
+
+  se (nascimento <= 2010) entao
+  escreva("Você pode votar.")
+  senao 
+  escreva("Você não pode votar.")
+  fimse 
+
+fimalgoritmo

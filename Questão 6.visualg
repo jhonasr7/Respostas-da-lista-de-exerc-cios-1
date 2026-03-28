@@ -1,0 +1,25 @@
+algoritmo "Questão 6"
+
+var altura, peso_ideal: Real
+  var nome, sexo: Caractere
+
+inicio
+
+  escreva ("Digite seu nome: ")
+  leia (nome)
+
+  escreva ("Digite sua altura: ")
+  leia (altura)
+
+  escreva ("Digite seu sexo (M ou F): ")
+  leia (sexo)
+
+  se (sexo = "M") entao
+    peso_ideal <- (72.7 * altura) - 58
+  senao
+    peso_ideal <- (62.1 * altura) - 44.7
+  fimse
+
+  escreva("Seu peso ideal é: ", peso_ideal)
+
+fimalgoritmo

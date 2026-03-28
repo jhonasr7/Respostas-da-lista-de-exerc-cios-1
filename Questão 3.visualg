@@ -1,0 +1,27 @@
+algoritmo "Questão 3"
+
+var
+  horas_mes, horas_extras: real
+  valor_hora, salario_total, salario_normal, valor_extra: real
+
+
+inicio
+  escreva("Digite o total de horas trabalhadas no mês:")
+  leia(horas_mes)
+
+  escreva("Digite o valor da hora:")
+  leia(valor_hora)
+
+  se (horas_mes <= 160) entao
+    salario_total <- horas_mes*valor_hora
+  senao
+    horas_extras <- horas_mes - 160
+    salario_normal <- 160*valor_hora
+    valor_extra <- horas_extras*(valor_hora*1.5)
+    salario_total <- salario_normal + valor_extra
+  fimse
+
+  escreva("Salario total: R$ ", salario_total)
+
+
+fimalgoritmo

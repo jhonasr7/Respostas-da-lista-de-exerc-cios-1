@@ -1,0 +1,36 @@
+algoritmo "Questão 7"
+var nome: caracter 
+var quantidade : inteiro 
+var preco_unitario, total, desconto, preco_apagar: real
+
+inicio
+  escreva ("Digite o nome do produto: ")
+  leia (nome)
+  
+  escreva ("Digite a quantidade do produto: ")
+  leia (quantidade)
+  
+  escreva ("Digite o preco unitario do produto: ")
+  leia (preco_unitario)
+  
+  total <- quantidade * preco_unitario
+
+  // Calculo do desconto 
+  se (quantidade <= 5) entao
+     desconto <- total * 0.02
+  senao
+     se (quantidade <= 10) entao 
+        desconto <- total * 0.03
+     senao 
+        desconto <- total * 0.05
+     fimse
+  fimse
+
+  preco_apagar <- total - desconto
+
+  escreval ("produto: ", nome)
+  escreval ("total: ", total)
+  escreval ("desconto: ", desconto)
+  escreval ("total apagar: ", preco_apagar)
+
+fimalgoritmo

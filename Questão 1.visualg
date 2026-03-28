@@ -1,0 +1,19 @@
+algoritmo "Questão 1"
+
+var
+  quantidade, total: real
+
+inicio
+
+  escreval("Quantidade de maçãs: ")
+  leia(quantidade)
+  
+  se(quantidade < 12) entao
+  total <- quantidade * 1.30
+  senao
+  total <- quantidade * 1.00
+  fimse
+
+  escreva("Você deve pagar: R$ ", total)
+
+fimalgoritmo
